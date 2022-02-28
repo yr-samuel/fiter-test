@@ -56,6 +56,14 @@ const useStyles = makeStyles(() => ({
 const Card = ({ nome, cargo, telefone, foto }: IProps) => {
   const classes = useStyles();
 
+  const maskNumber = (telefone: string) => {
+    const ddd = telefone.slice(0,2);
+    const leftSide = telefone.slice(2,7);
+    const rightSide = telefone.slice(7,11);
+
+    return `(${ddd}) ${leftSide}-${rightSide}`
+  }
+
   return (
     <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
       <MuiCard >
@@ -69,7 +77,7 @@ const Card = ({ nome, cargo, telefone, foto }: IProps) => {
           <span>{ cargo }</span>
         </Box>
         <Box className={classes.boxPhone}>
-          <Typography>{ telefone }</Typography>
+          <Typography>{ maskNumber(telefone) }</Typography>
         </Box>
       </MuiCard>
     </Grid>
