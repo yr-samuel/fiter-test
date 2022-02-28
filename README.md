@@ -14,3 +14,4 @@ Este é um desafio, que engloba consumir um endpoint que traz os colaboradores d
 3. Após a instalações dos pacotes necessários para a aplicação, basta rodar o comando -> npm start
 4. A partir de agora, em algum momento irá abrir o navegador com o projeto em execução, caso isso não aconteça, basta ver que a aplicação de fato está em execução e abrir o navegador no endereço -> localhost:3000
 
+### [Versão Deployada](https://621d4befdf909c4036147e68--adoring-swanson-39b7a3.netlify.app/)
